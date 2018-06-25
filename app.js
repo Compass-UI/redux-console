@@ -18,6 +18,14 @@ const defaultState = {
 };
 
 function reducer(state, action){
+  switch(action.type){
+    case 'ADD_COURSE':
+      return Object.assign({}, state, {
+        courses: [...state.courses, action.course]
+      });
+    default:
+      return state;
+  }
   return state;
 
 }
