@@ -27,6 +27,9 @@ addView((state) => {
   console.log(`The latest course in the library: ${state.courses[state.courses.length -1].name}`);
 });
 
-
+defaultState.courses.push({
+  name: 'Redux state managment',
+  topic: 'Simple State manamgment'
+})
 
 
